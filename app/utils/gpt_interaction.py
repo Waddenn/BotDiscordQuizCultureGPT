@@ -2,7 +2,7 @@ import json
 import openai
 import re
 import random
-from app.utils.wikipedia import get_random_wikipedia_title, get_article_details
+from app.utils.wikipedia_interaction import get_random_wikipedia_title, get_article_details
 
 mod = "infini"
 quiz_info = {}
