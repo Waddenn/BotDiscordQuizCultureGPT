@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import json
 import openai
-from app.utils.management_utils import clear
 from app.utils.quiz_utils import quiz
 
 with open("./config/config.json", "r") as config_file:
@@ -27,8 +26,6 @@ async def on_ready():
     print(f"{bot.user} est connecté au serveur")
 
 
-bot.add_command(clear)
 bot.add_command(quiz)
-
 
 bot.run(TOKEN)
